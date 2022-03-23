@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 import { Observable, throwError, catchError } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-const apiUrl = 'https://movie-list-api-5858.herokuapp.com/'
+const apiUrl = 'https://movie-list-api-5858.herokuapp.com/';
 @Injectable({
   providedIn: 'root'
 })
@@ -31,7 +31,7 @@ export class FetchApiDataService {
     return this.http.get(apiUrl + 'movies', {headers: new HttpHeaders({
         Authorization: 'Bearer ' + token,
       })
-    }).pipe(map(this.extractResponseData), catchError(this.handleError));
+    }).pipe(catchError(this.handleError));
   }
 
   private extractResponseData(res: Response): any {
@@ -47,7 +47,7 @@ export class FetchApiDataService {
           Authorization: 'Bearer ' + token,
         }),
       })
-      .pipe(map(this.extractResponseData), catchError(this.handleError));
+      .pipe(catchError(this.handleError));
   }
 
   getDirector(): Observable<any> {
@@ -58,7 +58,7 @@ export class FetchApiDataService {
           Authorization: 'Bearer ' + token,
         }),
       })
-      .pipe(map(this.extractResponseData), catchError(this.handleError));
+      .pipe(catchError(this.handleError));
   }
 
   getGenre(): Observable<any> {
@@ -69,7 +69,7 @@ export class FetchApiDataService {
           Authorization: 'Bearer ' + token,
         }),
       })
-      .pipe(map(this.extractResponseData), catchError(this.handleError));
+      .pipe(catchError(this.handleError));
   }
 
   getProfile(username: any): Observable<any> {
@@ -80,7 +80,7 @@ export class FetchApiDataService {
           Authorization: 'Bearer ' + token,
         }),
       })
-      .pipe(map(this.extractResponseData), catchError(this.handleError));
+      .pipe(catchError(this.handleError));
   }
 
   getFavoriteMovies(username: any): Observable<any> {
@@ -91,7 +91,7 @@ export class FetchApiDataService {
           Authorization: 'Bearer ' + token,
         }),
       })
-      .pipe(map(this.extractResponseData), catchError(this.handleError));
+      .pipe(catchError(this.handleError));
   }
 
   addFavoriteMovies(MovieID: any): Observable<any> {
@@ -103,7 +103,7 @@ export class FetchApiDataService {
           Authorization: 'Bearer ' + token,
         }),
       })
-      .pipe(map(this.extractResponseData), catchError(this.handleError));
+      .pipe(catchError(this.handleError));
   }
 
   deleteFavoriteMovies(MovieID: any): Observable<any> {
@@ -115,7 +115,7 @@ export class FetchApiDataService {
           Authorization: 'Bearer ' + token,
         }),
       })
-      .pipe(map(this.extractResponseData), catchError(this.handleError));
+      .pipe(catchError(this.handleError));
   }
 
   editProfile(userCredentials: object): Observable<any> {
@@ -127,7 +127,7 @@ export class FetchApiDataService {
           Authorization: 'Bearer ' + token,
         }),
       })
-      .pipe(map(this.extractResponseData), catchError(this.handleError));
+      .pipe(catchError(this.handleError));
   }
 
   public deleteUserProfile(): Observable<any> {
@@ -139,7 +139,7 @@ export class FetchApiDataService {
           Authorization: 'Bearer ' + token,
         }),
       })
-      .pipe(map(this.extractResponseData), catchError(this.handleError));
+      .pipe(catchError(this.handleError));
   }
 
   private handleError (error: HttpErrorResponse): any {
