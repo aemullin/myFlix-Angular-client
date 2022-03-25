@@ -1,0 +1,43 @@
+<mat-toolbar style="display: flex; justify-content: end;">
+    <mat-list-item routerLinkActive="active current" style="flex: 10;">
+        <h1>
+            Movielist
+        </h1>
+    </mat-list-item>
+    <mat-list-item routerLinkActive="active current" style="flex: 1;">
+        <button
+            mat-raised-button
+            color="primary"
+            routerLink="movies"
+            id="action-btn"
+            (click)="goToMoviesPage()" 
+            style="margin-right: 15px;"
+        >
+            MOVIES
+        </button>
+    </mat-list-item>
+    <mat-list-item routerLinkActive="active current" style="flex: 1;">
+        <button
+            mat-raised-button
+            color="secondary"
+            routerLink="profile"
+            id="action-btn"
+            (click)="goToProfilePage()" 
+            style="margin-right: 15px;"
+        >
+            PROFILE
+    </button>
+    </mat-list-item>
+    <mat-list-item routerLinkActive="active current" style="flex: 1;">
+        
+        <button
+        mat-raised-button
+        color="warn"
+        routerLink="logout"
+        id="action-btn"
+        (click)="logout()" 
+        >
+            LOGOUT
+    </button>
+    </mat-list-item>
+  </mat-toolbar>

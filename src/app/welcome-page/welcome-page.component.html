@@ -1,0 +1,27 @@
+ <body style="background-image: url(https://www.indiewire.com/wp-content/uploads/2020/09/movietheaterpopcornticket.jpeg);" >
+  <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; justify-content: center; margin-bottom: 100px;" >
+    <mat-card class='main-page' >
+      <mat-card-header>
+        <mat-card-title>Welcome to movieList</mat-card-title>
+      </mat-card-header>
+      <mat-card-content style="text-align: center;">
+        <button
+        mat-raised-button
+        (click)="openUserRegistrationDialog()"
+        style="margin-right: 10px;"
+        color="primary"
+        >
+          Sign Up
+        </button>
+        <button
+        mat-raised-button
+        color="secondary"
+        (click)="openUserLoginDialog()"
+        style="margin-right: 10px;"
+        >
+          Login
+        </button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</body>
