@@ -1,3 +1,8 @@
+/** 
+ * The SynopsisCardComponent is used to render a synopsis of the selected movie.
+ * @module SynopsisCardComponent
+ */
+
 import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 

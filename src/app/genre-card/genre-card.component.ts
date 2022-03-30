@@ -1,3 +1,8 @@
+/** 
+ * The GenreCardComponent is used to render a information about the genre of the selected movie.
+ * @module GenreCardComponent
+ */
+
 import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 

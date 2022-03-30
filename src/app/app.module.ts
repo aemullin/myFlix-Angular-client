@@ -1,3 +1,8 @@
+/**
+ * The AppModule is used to import and define all of the components that will be used in the app.
+ * @module AppModule
+ */
+
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';

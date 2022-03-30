@@ -1,3 +1,8 @@
+/** 
+ * The UserRegistrationFormComponent is used to render a form where the user can register for myFlix. 
+ * @module UserRegistrationFormComponent
+ */
+
 import { Component, OnInit, Input } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { FetchApiDataService } from '../fetch-api-data.service';

@@ -1,3 +1,8 @@
+/** 
+ * The UserProfileComponent is used to render the user's profile details.
+ * @module UserProfileComponent
+ */
+
 import { Component, OnInit } from '@angular/core';
 import { FetchApiDataService } from '../fetch-api-data.service';
 import { MatSnackBar } from '@angular/material/snack-bar';

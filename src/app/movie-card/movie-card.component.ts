@@ -1,3 +1,8 @@
+/** 
+ * The MovieCardComponent is used to display the data retrieved from the movies collection of the movieList database.
+ * @module MovieCardComponent
+ */
+
 import { Component, OnInit } from '@angular/core';
 import { FetchApiDataService } from '../fetch-api-data.service';
 import { MatDialog } from '@angular/material/dialog';

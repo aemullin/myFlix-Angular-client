@@ -1,3 +1,8 @@
+/** 
+ * The EditProfileComponent is used to render a form where the user can edit their profile data. 
+ * @module EditProfileComponent
+ */
+
 import { Component, OnInit, Input } from '@angular/core';
 import { FetchApiDataService } from '../fetch-api-data.service';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
